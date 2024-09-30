@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fut-ball</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+    <header>
+        <h1>Fut-ball</h1>
+    </header>
+    
+    <div class="carousel">
+        <div class="list">
+            <div class="item">
+                <img src="image/img1.jpg">
+                <div class="content">
+                    <div class="title">Como Jugar al fútbol</div>
+                    <div class="des">
+                        jugar al fútbol implica entender las reglas básicas y desarrollar habilidades. El objetivo del juego es marcar más goles que el equipo contrario. Para empezar, necesitas un balón y un campo con dos porterías. Los jugadores deben pasar el balón entre ellos usando los pies, aunque también se pueden utilizar otras partes del cuerpo, excepto las manos (salvo el portero). Es importante aprender a driblar, pasar y patear. La comunicación con tus compañeros es clave para crear jugadas y defender. Al final del partido, el equipo que más goles haya marcado gana. ¡Diviértete y disfruta del juego!
+Tradicionalmente, en un partido de fútbol hay 22 jugadores en el campo, y cada equipo tiene 10 jugadores y un portero.
+"Un partido completo dura 90 minutos, divididos en dos tiempos de 45 minutos", explica Carl Wild, entrenador de fútbol certificado por la Asociación Inglesa de Fútbol y la Asociación Escocesa de Fútbol, experto en administración y autor de "Essential Practices for Player Development".
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    <div class="title">Camp Nou</div>
+                    <div class="des">
+                        El estadio más grande de Europa es el Camp Nou en Barcelona, España, con una capacidad de aproximadamente 99,354 espectadores. Es el hogar del FC Barcelona y es conocido por su impresionante ambiente durante los partidos.
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <div class="title">Brasil</div>
+                    <div class="des">
+                        Brasil es la mejor selección de fútbol por sus cinco Copas del Mundo, su estilo de juego atractivo y la producción de leyendas como Pelé. Su dominio internacional y su rica cultura futbolística la hacen icónica en el deporte.
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <div class="title">Liverpool</div>
+                    <div class="des">
+                        El Liverpool cuenta con una de las hinchadas más apasionadas del fútbol. Sus seguidores crean un ambiente electrizante, especialmente en partidos importantes. El famoso himno "You'll Never Walk Alone" se entona antes de cada encuentro, simbolizando la unidad y el apoyo incondicional hacia el equipo. Esta tradición hace del Liverpool un club único en la historia del fútbol.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="thumbnail">
+            <div class="item">
+                <img src="image/img1.jpg">
+                <div class="content">
+                    <div class="title">Como jugar al futbol</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    <div class="title">Camp Nou</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <div class="title">Brasil</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <div class="title">Liverpool</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+
+        <div class="time"></div>
+    </div>
+     
+    <div class="info-section">
+        <div class="info-card">
+            <h3>Posiciones de los jugadores</h3>
+            <p>En el partido, hay 10 jugadores en cada equipo en unidades de delanteros, defensas y centrocampistas, y roles aún más específicos dentro de esas unidades.</p>
+            <button id="toggleButton" onclick="toggleSections()">Ver más</button>
+        </div>
+    
+        <div class="info-card">
+            <h3>Reglas del Fútbol</h3>
+            <p>Aquí puedes aprender sobre las reglas básicas del fútbol que todos los jugadores y aficionados deben conocer.</p>
+            <button onclick="showRules()">Ver Reglas</button>
+        </div>
+    </div>
+
+    <div id="rulesSection" style="display: none; padding: 20px; text-align: left;">
+        <h3>Las reglas del fútbol</h3>
+        <p>Aprender a jugar fútbol también significa adquirir una comprensión básica de las reglas. Cuanto más juegues, practiques y veas los partidos, mejor comprenderás estas reglas, pero empezar a jugar sabiendo algo puede ayudarte a aprender rápido. Estas son las reglas básicas del fútbol.</p>
+        <ol>
+            <li><strong>Prohibido usar las manos:</strong> Está totalmente prohibido usar las manos en el fútbol. Va contra las reglas utilizar las manos o los brazos para manipular el balón...</li>
+            <li><strong>Fuera de juego:</strong> Este es otro término que escucharás con frecuencia en el fútbol...</li>
+            <li><strong>Falta:</strong> En el fútbol, cometer faltas va en contra de las reglas...</li>
+            <li><strong>Penal:</strong> Al igual que en otros deportes, en el fútbol también hay penales...</li>
+            <li><strong>Tiros de esquina:</strong> Si el balón sobrepasa la línea de meta, pero no se marca un gol...</li>
+            <li><strong>Gol:</strong> Un gol es cuando un jugador dispara el balón al interior de la portería del equipo contrario...</li>
+            <li><strong>Saques de banda:</strong> Si un jugador patea el balón fuera de los lados del campo...</li>
+            <li><strong>Tiros penales:</strong> Cuando se produce una falta dentro del área de penal...</li>
+            <li><strong>Tiros libres:</strong> Cuando una falta se produce en cualquier otro lugar de la cancha...</li>
+        </ol>
+        <p><em>Texto: Jessie Quinn</em></p>
+    </div>
+
+    <center>
+        <div id="infoSections" class="section-container">
+            <div class="info-card">
+                <h3>Portero</h3>
+                <p>En el fútbol, hay dos porteros en el campo, cada uno protegiendo la portería de su equipo. Esta posición requiere habilidades diferentes a las de un defensa o un delantero.</p>
+                <button><img src="image/portero.jpg" alt="Portero"></button>
+            </div>
+    
+            <div class="info-card">
+                <h3>Centrocampista</h3>
+                <p>Selvadurai llama a los centrocampistas "jugadores de enlace" porque "son muy buenos distribuidores del balón".</p>
+                <button><img src="image/centrocampista.jpg" alt="Centrocampista"></button>
+            </div>
+    
+            <div class="info-card">
+                <h3>Defensa</h3>
+                <p>El trabajo de la defensa consiste en "defender y mantener el balón fuera de la portería, y asegurarse de que el otro equipo no genere oportunidades con peligro de gol".</p>
+                <button><img src="image/defensa.jpg" alt="Defensa"></button>
+            </div>
+    
+            <div class="info-card">
+                <h3>Delantero</h3>
+                <p>El delantero es una posición ofensiva, a veces denominada posición de "ataque".</p>
+                <button><img src="image/delantero.jpg" alt="Delantero"></button>
+            </div>
+        </div>
+    </center>
+
+    <script src="script.js"></script>
+</body>
+</html>
