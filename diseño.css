@@ -154,3 +154,7 @@ button:hover {
     height: auto;
     border-radius: 8px;
 }
+
+iframe[src*="youtube.com"] {
+    pointer-events: none;
+}
