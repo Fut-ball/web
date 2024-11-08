@@ -155,6 +155,25 @@ button:hover {
     border-radius: 8px;
 }
 
+/* Oculta la pantalla de sugerencias al final del video */
 iframe[src*="youtube.com"] {
-    pointer-events: none;
+    position: relative;
 }
+
+iframe[src*="youtube.com"]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Ajusta la opacidad si prefieres */
+    display: none; /* Oculto por defecto */
+    z-index: 10;
+}
+
+/* Muestra el overlay solo al finalizar el video */
+iframe[src*="youtube.com"].show-overlay::after {
+    display: block;
+}
+
